@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8">
+    <title> PCP-Registration Form</title>
+    <link rel="stylesheet" href="style_register.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+	
+  <div class="container">
+    <div class="title">Registration</div>
+    <div class="content">
+		<form th:action="@{/process_register}" th:object="${user}"
+            method="post" >
+        <div class="user-details">
+			
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" th:field="*{fullname}" placeholder="Enter your name" required minlength="2" maxlength="20"/>
+          </div>
+          <div class="input-box">
+            <span class="details">Pet Information</span>
+            <input type="text" th:field="*{petinfo}" placeholder="Pet Name - Pet Type" required minlength="2" maxlength="20"/>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" th:field="*{email}" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" th:field="*{phone}" placeholder="Enter your number" required maxlength="10"/>
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="text" th:field="*{password}" placeholder="Enter your password" required minlength="6" maxlength="10"/>
+          </div>
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="text" th:field="*{confirm}" placeholder="Confirm your password" required minlength="6" maxlength="10"/>
+          </div>
+        </div>
+        
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

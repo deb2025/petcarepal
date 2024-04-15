@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main" id="main">
+        <div class="nav-bar " id="nav-bar">
+            <div class="nav-left">
+                <div class="company-name">
+                    <h1>petcare</h1>
+                </div>
+                <div class="descrip">
+                    <p>Who let the dogs out!</p>
+                </div>
+            </div>
+            <div class="nav-middle">
+                <a href="#hero">home</a>
+                <a href="#about">about</a>
+                <a href="#services">services</a>
+            </div>
+            <div class="nav-right">
+                <div>
+        			<form th:action="@{/logout}" method="post">
+            		<p>
+                		Welcome <b>[[${#request.userPrincipal.principal.fullName}]]</b>
+           			</p>
+            	<input type="submit" value="Sign Out" />
+        	</form>
+   	 </div>
+    <div>
+
+            </div>
+        </div>
+        <div class="hero" id="hero">
+            <div class="left-section">
+                <div class="left-section-one">
+                    <div class="heading-one">
+                        <h2>YOUR MODERN
+                            PETCARE CENTER
+                        </h2>
+                    </div>
+                    <div class="paragraph">
+                        <p>PetCare is now open here in Kolkata!</p>
+                        <p>Any issues with your beloved ones and we are here to solve all of your problems.</p>
+                        <p>Give your dogs the best treatment that they deserve!</p>
+                    </div>
+                </div>
+                <div class="left-section-two">
+                    <a href="#">
+                        <button class="Start-today">
+                            start today
+                        </button>
+                    </a>
+                    <button class="registration" onclick="window.location.href='/signup';">registration</button>
+                </div>
+                <div class="left-section-three">
+                    <div class="category">
+                        <h4>Choose your category:</h4>
+                    </div>
+                    <div class="categories">
+                        <div class="category-one">
+                            <a href='http://localhost:8501/'>Disease Recognition</a>
+                        </div>
+                        <div class="category-two">
+                            <a href="url">Nearby Pet Care Centers</a>
+                        </div>
+                        <div class="category-three">
+                            <a href="medicine.html">Pet Medicine</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-section">
+                <div class="right-section-one">
+                    <div class="image-divone">
+                        <img src="images/hero1.jpg" alt="">
+                    </div>
+                    <div class="image-divfour">
+                        <img src="images/hero4.jpg" alt="">
+                    </div>
+                </div>
+                <div class="right-section-two">
+                    <div class="image-divsecond">
+                        <img src="images/hero2.jpg" alt="">
+                    </div>
+                    <div class="image-divfifth">
+                        <img src="images/hero5.jpg" alt="">
+                    </div>
+                </div>
+                <div class="right-section-three">
+                    <div class="image-divthird">
+                        <img src="images/hero3.jpg" alt="">
+                    </div>
+                    <div class="image-divsixth">
+                        <img src="images/hero6.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="small-image-one"></div>
+            <div class="small-image-two"></div>
+            <div class="small-image-three"></div>
+            <div class="small-image-fourth"></div>
+            <div class="small-image-fifth"></div>
+        </div>
+        <div class="about" id="about">
+            <div class="about-left-section">
+                <div class="about-heading">
+                    <h2>about us... <i class="fa-solid fa-paw"></i> <i class="fa-solid fa-paw"></i></h2>
+                </div>
+                <div class="about-details-section">
+                    <div class="abt-details">
+                        <div class="first-details-one">
+                            <h4>Our Passion for Pets: <i class="fa-solid fa-paw"></i></h4>
+                        </div>
+                        <div class="second-details-two">
+                            <p>Our journey began with a shared passion for animals. Our pet care center is a haven for pets and their owners alike. We understand the unique bond you share with your pets, and it is our mission to enhance and nurture that bond.</p>
+                        </div>
+                    </div>
+                    <div class="abt-details">
+                        <div class="first-details-one">
+                            <h4>A Home Away from Home <i class="fa-solid fa-paw"></i></h4>
+                        </div>
+                        <div class="second-details-two">
+                            <p>PetCare is not just a pet care center; it's a home away from home for your beloved companions. Our facility is designed to ensure a safe, comfortable, and stimulating environment specially for dogs of all shapes and sizes.</p>
+                        </div>
+                    </div>
+                    <div class="abt-details">
+                        <div class="first-details-one">
+                            <h4>Our Dedicated Team: <i class="fa-solid fa-paw"></i></h4>
+                        </div>
+                        <div class="second-details-two">
+                            <p>Behind every wagging tail and contented purr is a team of passionate and experienced pet lovers. Our staff is committed to providing the highest standard of care, from grooming and boarding to personalized attention for each pet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-right-section">
+                <div class="about-image">
+
+                </div>
+            </div>
+        </div>
+        <div class="services" id="services">
+            <div class="services-heading">
+                <h2>services</h2>
+            </div>
+            <div class="services-section">
+                <div class="service-one">
+                    <div class="layer-one">
+                        <div class="layer-heading">
+                            <h4>disease recognition</h4>
+                        </div>
+                        <div class="layer-paragraph">
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="layer-symbol">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-two">
+                    <div class="layer-two">
+                        <div class="layer-heading">
+                            <h4>creche locator</h4>
+                        </div>
+                        <div class="layer-paragraph">
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="layer-symbol">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-three">
+                    <div class="layer-three">
+                        <div class="layer-heading">
+                            <h4>pet foods</h4>
+                        </div>
+                        <div class="layer-paragraph">
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="layer-symbol">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact" id="contact">
+            <div class="contact-left-section">
+                <div class="contactme-heading">
+                    <h2>contact us</h2>
+                </div>
+                <div class="email-number-social">
+                    <div class="email">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <p>petcareofficial@gmail.com</p>
+                    </div>
+                    <div class="number">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>00012348894</p>
+                    </div>
+                    <div class="social">
+                        <div class="facebook">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        </div>
+                        <div class="insta">
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                        <div class="linkdin">
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <button class="brochure-button">
+                    <a href="#">Download Brochure</a>
+                </button>
+            </div>
+            <div class="contact-right-section">
+                <form action="#">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" id="email" placeholder="Your Email">
+                    <textarea name="Message" id="message" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn-submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <p>Copyright @Petcare <i class="fa-solid fa-heart"></i></p>
+        </footer>
+    </div>
+    <script src="https://kit.fontawesome.com/77e08a601e.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

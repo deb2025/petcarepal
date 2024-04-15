@@ -1,0 +1,930 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+    scroll-behavior: smooth;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.mainofmedicine{
+    position: relative;
+    /* background-color: #301F47; */
+}
+.sticky{
+    margin-bottom: 4px solid white;
+    background-color: #ffffff;
+}
+.navbarofmedicine{
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    position: fixed;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2.3vw;
+    z-index: 99;
+    background-color: #1A171E;
+    transition: 0.2s;
+}
+
+                /* Nav-bar-Left-section starts */
+.nav-leftofmedicine{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    /* background-color: red; */
+}
+.company-name h1{
+    text-transform: uppercase;
+    font-size: 2.4vw;
+    font-weight: 600;
+    color: #ffffff;
+}
+.descrip{
+    text-align: center;
+    font-size: 0.8vw;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+                    /* Nav-bar-left section ends */
+
+                    /* Nav-bar-Middle sections starts */
+
+.nav-middleofmedicine{
+    position: relative;
+    /* background-color: green; */
+}
+.nav-middleofmedicine input{
+    width: 34vw;
+    padding: 0.8vw 3.4vw;
+    border-radius: 50px;
+    box-shadow:2px 2px 5px #33006F ;
+}
+.nav-middleofmedicine i{
+    position: absolute;
+    z-index: 99;
+    color: black;
+    font-size: 1.5vw;
+    top:0.9vw;
+    left: 1vw;
+} 
+.nav-middleofmedicine input::placeholder{
+    color: black;
+}
+
+                    /*Nav-Middle Ends  */
+
+.nav-rightofmedicine{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3vw;
+    gap: 2vw;
+    /* background-color: blue; */
+}
+.nav-right-partone{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7vw;
+}
+.nav-rightofmedicine i{
+    color: #ffffff;
+
+}
+.nav-rightofmedicine h4{
+    color: #ffffff;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+.nav-right-parttwo{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7vw;
+    /* background-color: green; */
+}
+.numberclass{
+    position: absolute;
+    width: 1.3vw;
+    height: 1.3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    color: #ffffff;
+    border-radius: 50%;
+    top: 2%;
+    left: 69%;
+}
+
+                    /* Pet-medicine Section */
+
+.poster-medicine{
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    margin-top: 12vh;
+    display: flex;
+    /* flex-wrap: nowrap; */
+    overflow: hidden;
+    background-color: #1A171E;;
+}
+.posterone{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(./images/dog-medicine-poster.jpg);
+    background-position: 0% 26.5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.postertwo{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(./images/poster6.png);
+    background-position: 0% 10.5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.posterthree{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(./images/poster11.jpg);
+    background-position: 0% 50.5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.posterfour{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(./images/poster13.jpg);
+    background-position: 0% 15.5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box{
+    transition: transform 5s ease;;
+}
+.box:nth-child(1) { left: 0; }
+.box:nth-child(2) { left: 100%; }
+.box:nth-child(3) { left: 200%; }
+.box:nth-child(4) { left: 300%; }
+
+                    /* Pet-Medicine Section */
+
+.pet-medicine{
+    width: 100%;
+    height: 250vh;
+    position: relative;
+    display: flex;
+    background-color: #1A171E;
+}
+
+                    /* Categories-section */
+.categories-section{
+    width: 25%;
+    height: 35%;
+    position: sticky;
+    top: 12vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: right;
+    margin-right: 0.6vw;
+    /* background-color: pink; */
+}
+.category-sec{
+    width: 92%;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1vw;
+    padding: 3vh 2vh;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #16121b;
+}
+.category-heading{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 0.5vw;
+    /* background-color: yellowgreen; */
+}
+.heading{
+    position: relative;
+}
+.heading h3{
+    font-size: 1.8vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #ffffff;
+}
+.heading h3::after{
+    content: '';
+    display: block;
+    height: 1.2px;
+    width: 100%;
+    background-color: #ffffff;
+    transform: scale(0);
+    transition: transform 0.3s ease;
+    transform-origin: left;
+}
+.heading h3:hover::after{
+    transform: scale(1);
+}
+.category-heading i{
+    font-size:1.6vw ;
+    transform: rotate(30deg);
+    color: #ffffff;
+}
+
+.category-list{
+    position: relative;
+    width: 100%;
+    /* background-color: burlywood; */
+}
+.category-list .home{
+    position: relative;
+    margin-bottom: 0.5vw;
+    padding-left: 0.3vw;
+    padding-block: 0.6vw;
+    border-radius: 5px;
+    background-color: #d9d9d90e;
+}
+.home:hover{
+    background-color: #1A171E;
+}
+.home a{
+    font-size: 1.2vw;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #d9d9d9;
+}
+.home a:hover{
+    color:#FD49A0;
+}
+.product-lists{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* background-color: pink; */
+}
+.list-box-one{
+    position: relative;
+    margin-bottom: 0.5vw;
+    padding-left: 0.3vw;
+    padding-block: 0.4vw;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #d9d9d90e;
+}
+.list-box-one p{
+    font-size: 1.2vw;
+    text-transform: capitalize;
+    text-decoration: none;
+    cursor: pointer;
+    color: #d9d9d9;
+}
+.list-box-one:hover{
+    background-color: #1A171E;
+}
+.list-box-one p:hover{
+    color:#FD49A0;;
+}
+.list-box-two{
+    position: relative;
+    margin-bottom: 0.5vw;
+    padding-left: 0.3vw;
+    padding-block: 0.4vw;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #d9d9d90e;
+}
+.list-box-two p{
+    font-size: 1.2vw;
+    text-transform: capitalize;
+    text-decoration: none;
+    cursor: pointer;
+    color: #d9d9d9;
+}
+.list-box-two p:hover{
+    color:#FD49A0;;
+}
+.list-box-two:hover{
+    background-color: #1A171E;
+}
+.list-box-three{
+    position: relative;
+    margin-bottom: 0.5vw;
+    padding-left: 0.3vw;
+    padding-block: 0.4vw;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #d9d9d90e;
+}
+.list-box-three p{
+    font-size: 1.2vw;
+    text-transform: capitalize;
+    text-decoration: none;
+    cursor: pointer;
+    color: #d9d9d9;
+}
+.list-box-three p:hover{
+    color:#FD49A0;;
+}
+.list-box-three:hover{
+    background-color: #1A171E;
+}
+.list-box-four{
+    position: relative;
+    margin-bottom: 0.5vw;
+    padding-left: 0.3vw;
+    padding-block: 0.4vw;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #d9d9d90e;
+}
+.list-box-four p{
+    font-size: 1.2vw;
+    text-transform: capitalize;
+    text-decoration: none;
+    cursor: pointer;
+    color: #d9d9d9;
+}
+.list-box-four:hover{
+    background-color: #1A171E;
+}
+.list-box-four p:hover{
+    color:#FD49A0;;
+}
+
+.medicine-section{
+    width: 75%;
+    height: 100%;
+    /* background-color: aqua; */
+    padding: 1vw 2.3vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    row-gap: 1vw;
+    flex-wrap: wrap;
+}
+.medicine-one{
+    position: relative;
+    width: 20vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.2vw;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 4px 2px 5px #301F47;
+    background-color: white;
+    overflow: hidden;
+}
+.medi-img{
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    border-bottom: 1px solid #d9d9d9;
+    overflow: hidden;
+}
+.medi-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.medi-descrip{
+    position: relative;
+    width: 100%;
+    height:23.5vh ;
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+}
+.wrapper-descrip{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.4vw 0.4vw;
+    /* background-color: yellow; */
+}
+.wrapper-descrip .rating{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2vw;
+    padding: 0.2vw 0.4vw;
+    border-radius: 10px;
+    background-color: #766191b7;
+}
+.wrapper-descrip .rating p{
+    font-size: 0.9vw;
+    font-weight: 600;
+    color: #301F47;
+}
+.wrapper-descrip .rating i{
+    font-size: 0.9vw;
+    color: #301F47;
+}
+.wrapper-descrip .best-seller{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2vw;
+}
+.wrapper-descrip .best-seller i{
+    font-size: 0.9vw;
+    color: #111111;
+}
+.wrapper-descrip .best-seller p{
+    font-size: 0.9vw;
+    color: #111111;
+}
+.medi-descrip .descrip{
+    position: relative;
+    width: 100%;
+    padding: 0.3vw 0.4vw;
+    /* background-color: yellow; */
+}
+.medi-descrip .descrip p{
+    font-size: 1.3vw;
+    font-weight: 600;
+    line-height: 1.5vw;
+    color: black;
+    text-align: left;
+}
+.medi-descrip .price{
+    position: relative;
+    width: 100%;
+    padding: 0.3vw 0.4vw;
+}
+.medi-descrip .price p{
+    font-size: 1.4vw;
+    color: rgb(207, 6, 6);
+    font-weight: 600;
+}
+.medicine-one .select-button{
+    width: 100%;
+    /* background-color: orange; */
+    height: 6.5vh;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px
+}
+.medicine-one .select-button button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-weight: 600;
+    font-size: 1.1vw;
+    color: #ffffff;
+    background-color: rgb(255, 136, 0);
+}
+
+.medicine-two{
+    position: relative;
+    width: 20vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.2vw;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 4px 2px 5px #301F47;
+    background-color: white;
+    overflow: hidden;
+}
+.medicine-two .medi-img 
+{
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    border-bottom: 1px solid #d9d9d9;
+    overflow: hidden;
+}
+.medicine-two .medi-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.medicine-two .select-button{
+    width: 100%;
+    /* background-color: orange; */
+    height: 6.5vh;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px
+}
+.medicine-two .select-button button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-weight: 600;
+    font-size: 1.1vw;
+    color: #ffffff;
+    background-color: rgb(255, 136, 0);
+}
+
+.medicine-three{
+    position: relative;
+    width: 20vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.2vw;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 4px 2px 5px #301F47;
+    background-color: white;
+    overflow: hidden;
+}
+.medicine-three .medi-img 
+{
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    border-bottom: 1px solid #d9d9d9;
+    overflow: hidden;
+}
+.medicine-three .medi-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.medicine-three .select-button{
+    width: 100%;
+    /* background-color: orange; */
+    height: 6.5vh;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px
+}
+.medicine-three .select-button button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-weight: 600;
+    font-size: 1.1vw;
+    color: #ffffff;
+    background-color: rgb(255, 136, 0);
+}
+
+.medicine-four{
+    position: relative;
+    width: 20vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.2vw;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 4px 2px 5px #301F47;
+    background-color: white;
+    overflow: hidden;
+}
+.medicine-four .select-button{
+    width: 100%;
+    /* background-color: orange; */
+    height: 6.5vh;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px
+}
+.medicine-four .select-button button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-weight: 600;
+    font-size: 1.1vw;
+    color: #ffffff;
+    background-color: rgb(255, 136, 0);
+}
+.medicine-five{
+    position: relative;
+    width: 20vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.2vw;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 4px 2px 5px #301F47;
+    background-color: white;
+    overflow: hidden;
+}
+.medicine-five .select-button{
+    width: 100%;
+    /* background-color: orange; */
+    height: 6.5vh;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px
+}
+.medicine-five .select-button button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-weight: 600;
+    font-size: 1.1vw;
+    color: #ffffff;
+    background-color: rgb(255, 136, 0);
+}
+.medicine-sixth{
+    position: relative;
+    width: 20vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.2vw;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 4px 2px 5px #301F47;
+    background-color: white;
+    overflow: hidden;
+}
+.medicine-sixth .wrapper-descrip{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0.4vw 0.4vw;
+}
+.medicine-sixth .select-button{
+    width: 100%;
+    /* background-color: orange; */
+    height: 6.5vh;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px
+}
+.medicine-sixth .select-button button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-weight: 600;
+    font-size: 1.1vw;
+    color: #ffffff;
+    background-color: rgb(255, 136, 0);
+}
+
+.medicine-seven{
+    position: relative;
+    width: 20vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.2vw;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 4px 2px 5px #301F47;
+    background-color: white;
+    overflow: hidden;
+}
+.medicine-seven .wrapper-descrip{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0.4vw 0.4vw;
+}
+.medicine-seven .select-button{
+    width: 100%;
+    /* background-color: orange; */
+    height: 6.5vh;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px
+}
+.medicine-seven .select-button button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-weight: 600;
+    font-size: 1.1vw;
+    color: #ffffff;
+    background-color: rgb(255, 136, 0);
+}
+.medicine-eight{
+    position: relative;
+    width: 20vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.2vw;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 4px 2px 5px #301F47;
+    background-color: white;
+    overflow: hidden;
+}
+.medicine-eight .wrapper-descrip{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0.4vw 0.4vw;
+}
+.medicine-eight .select-button{
+    width: 100%;
+    /* background-color: orange; */
+    height: 6.5vh;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px
+}
+.medicine-eight .select-button button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-weight: 600;
+    font-size: 1.1vw;
+    color: #ffffff;
+    background-color: rgb(255, 136, 0);
+}
+.medicine-nine{
+    position: relative;
+    width: 20vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.2vw;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 4px 2px 5px #301F47;
+    background-color: white;
+    overflow: hidden;
+}
+.medicine-nine .wrapper-descrip{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0.4vw 0.4vw;
+}
+.medicine-nine .select-button{
+    width: 100%;
+    /* background-color: orange; */
+    height: 6.5vh;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px
+}
+.medicine-nine .select-button button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-weight: 600;
+    font-size: 1.1vw;
+    color: #ffffff;
+    background-color: rgb(255, 136, 0);
+}
+.medicine-ten{
+    position: relative;
+    width: 20vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.2vw;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 4px 2px 5px #301F47;
+    background-color: white;
+    overflow: hidden;
+}
+.medicine-ten .wrapper-descrip{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0.4vw 0.4vw;
+}
+.medicine-ten .select-button{
+    width: 100%;
+    /* background-color: orange; */
+    height: 6.5vh;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px
+}
+.medicine-ten .select-button button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-weight: 600;
+    font-size: 1.1vw;
+    color: #ffffff;
+    background-color: rgb(255, 136, 0);
+}
+.medicine-eleven{
+    position: relative;
+    width: 20vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.2vw;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 4px 2px 5px #301F47;
+    background-color: white;
+    overflow: hidden;
+}
+.medicine-eleven .wrapper-descrip{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0.4vw 0.4vw;
+}
+.medicine-eleven .select-button{
+    width: 100%;
+    /* background-color: orange; */
+    height: 6.5vh;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px
+}
+.medicine-eleven .select-button button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-weight: 600;
+    font-size: 1.1vw;
+    color: #ffffff;
+    background-color: rgb(255, 136, 0);
+}
+.medicine-twelve{
+    position: relative;
+    width: 20vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.2vw;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 4px 2px 5px #301F47;
+    background-color: white;
+    overflow: hidden;
+}
+.medicine-twelve .wrapper-descrip{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0.4vw 0.4vw;
+}
+.medicine-twelve .select-button{
+    width: 100%;
+    /* background-color: orange; */
+    height: 6.5vh;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px
+}
+.medicine-twelve .select-button button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-weight: 600;
+    font-size: 1.1vw;
+    color: #ffffff;
+    background-color: rgb(255, 136, 0);
+}

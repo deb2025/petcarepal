@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCP-Creche Locator</title>
+    <link rel="stylesheet" href="locator_style.css">
+</head>
+<body>
+    <div class="main-conatiner">
+       <div class="back-side">
+        <div class="overlay"></div>
+       </div>
+       <div class="top-side">
+        <div class="nav-bar">
+            <div class="nav-bar-inside">
+                <div class="first-section">
+                    <div class="first-sec-img" onclick="window.location.href='/';">
+                        <img src="./images/pcplogo.png" alt="">
+                    </div>
+                    <div class="first-sec-middle">
+                        <a href = 'http://localhost:8082/'>home</a>
+                        <div class="others">
+                            <h4 class="others-heading">others services</h4>
+                            <i class="down-icon fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                    <div class="first-sec-signup" onclick="window.location.href='/signup';">
+                        <button>sign up</button>
+                    </div>
+                </div>
+                <div class="second-section">
+                    <div class="second-section-container">
+                        <a href='http://localhost:8501/'>disease recognition</a>
+                        <a href='http://localhost:8082/medicine'>pet medicine</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="creche-body">
+            <div class="left-section">
+                <div class="left-section-inner">
+                    <div class="heading">
+                        <h1>SEE A VETERINARIAN</h1>
+                    </div>
+                    <div class="description">
+                        <p>
+                            PetCarePal introduces a revolutionary creche locator service tailored to the needs of pet owners everywhere. 
+                            With our innovative platform, finding the perfect daycare or pet creche for your beloved furry companion has never been easier. 
+                            Our comprehensive database offers detailed information on facilities, including services offered, location, and customer reviews, ensuring peace of mind for pet owners. 
+                            Whether you need a safe place for your dog to socialize while you're at work or a trustworthy environment for your cat to play during a weekend getaway, PetCarePal has you covered. 
+                            Say goodbye to endless searching and uncertainty; let PetCarePal guide you to the ideal creche, providing convenience and assurance for both you and your pet.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="right-section">
+                <div class="right-section-inner">
+                    <div class="i-tag">
+                        <iframe src="https://my.atlist.com/map/b2e1dcf4-a426-4be1-b106-494922f0c6de/?share=true" allow="geolocation 'self' https://my.atlist.com" width="100%" height="400px" loading="lazy" frameborder="0" scrolling="no" allowfullscreen id="atlist-embed"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/77e08a601e.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="locator_script.js"></script>
+</body>
+</html>

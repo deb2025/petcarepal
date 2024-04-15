@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.main-container{
+    position: relative;
+}
+.back-side{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/creche-loco.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -15px;
+    background-color: red;
+}
+.back-side .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(9px);
+}
+.top-side{
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: 99;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: aqua; */
+}
+.nav-bar{
+    width: 100%;
+    height: 13vh;
+    position: relative;
+    padding: 0 4.4vw;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    overflow: hidden;
+    z-index: 99;
+    transition: height 1s ease;
+    /* background-color: tomato; */
+}
+.nav-bar-inside{
+    width: 94vw;
+    height: 13vh;
+    position: relative;
+    /* background-color: turquoise; */
+    transition: height 1s ease;
+    border-bottom: 1px solid #dadada;
+}
+.first-section{
+    width: 100%;
+    height: 13vh;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.first-sec-img{
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+}
+.first-sec-img img{
+    height: 92%;
+}
+.first-sec-middle{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    padding-top: 2.2vw;
+    /* background-color: blue; */
+}
+.first-sec-middle a{
+    text-decoration: none;
+    text-transform:uppercase;
+    color: #ffffff;
+    font-weight: 300;
+    cursor: pointer;
+    text-shadow: 0.8px 0.8px 4px black;
+    /* padding: 0.4vw 1vw; */
+}
+.first-sec-middle a::after{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #ffffff;
+    transform: scale(0);
+    transition: transform 0.3s ease;
+    transform-origin: left;
+}
+.first-sec-middle a:hover::after{
+    transform: scale(1);
+}
+.others{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6vw;
+}
+.others h4{
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #ffffff;
+    text-shadow: 0.8px 0.8px 4px black;
+    cursor: pointer;
+}
+.others h4::after{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #ffffff;
+    transform: scale(0);
+    transition: transform 0.3s ease;
+    transform-origin: left;
+}
+.others h4:hover::after{
+    transform: scale(1);
+}
+.others i{
+    color: #ffffff;
+    transition: transform 0.5s ease;
+}
+.first-sec-signup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.6vw;
+    /* background-color: blueviolet; */
+}
+.first-sec-signup button{
+    font-size:1vw;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    padding: 0.6vw 1.8vw;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: scale 0.8s;
+}
+.first-sec-signup button:active{
+    transform: scale(0.9);
+}
+.second-section{
+    width: 100%;
+    height: 6.4vh;
+    position: absolute;
+    top: 13vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    /* background-color: thistle; */
+}
+.second-section-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    /* gap: 0.2vw; */
+    margin-left: 84px;
+    /* padding: 0.4vw 0.2vw; */
+    /* background-color: springgreen; */
+}
+.second-section-container a{
+    text-decoration: none;
+    text-transform:capitalize;
+    color: #ffffff;
+    font-weight: 200;
+    cursor: pointer;
+    padding: 0.3vw 0.6vw;
+    text-shadow: 0.8px 0.8px 4px black;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    /* background-color: red; */
+}
+.second-section-container a:hover{
+    background-color:#1B1212;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Body section */
+.creche-body{
+    width: 100%;
+    height: 87%;
+    padding: 0 4.4vw ;
+    position: absolute;
+    z-index: 98;
+    top: 13vh;
+    display: flex;
+    /* background-color: burlywood; */
+}
+.left-section{
+    width: 40%;
+    height: 100%;
+    padding: 5vw 0vw 0vw 0vw;
+    /* background-color: red; */
+}
+.left-section-inner{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* gap: 8vw; */
+    /* background-color: yellowgreen; */
+}
+.left-section-inner .heading h1{
+    font-family: "Krona One", sans-serif;
+    color: #ffffffe8;
+}
+.left-section-inner .description{
+    margin-top: 6vw;
+}
+.left-section-inner .description p{
+    font-family: "Varela Round", sans-serif;
+    color: #dadada;
+    letter-spacing: 0.1vw;
+    line-height: 1.7vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.right-section{
+    width: 60%;
+    height: 100%;
+    padding: 5vw 0vw 1vw 0vw;
+    /* background-color: rebeccapurple; */
+}
+.right-section-inner{
+    width: 100%;
+    height: 100%;
+    /* padding: 0vw 1vw 1vw 0vw; */
+    border-bottom-right-radius: 5px;
+    /* background-color: red; */
+}
+.i-tag{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: blue; */
+}
+.i-tag iframe{
+    width: 100%;
+    height: 100%;
+    /* background-color: yellowgreen; */
+}
