@@ -148,7 +148,7 @@ html,body{
     width: 100%;
     height: 100%;
     position: absolute;
-    background-image: url(./images/dog-medicine-poster.jpg);
+    background-image: url(/images/dog-medicine-poster.jpg);
     background-position: 0% 26.5%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -157,7 +157,7 @@ html,body{
     width: 100%;
     height: 100%;
     position: absolute;
-    background-image: url(./images/poster6.png);
+    background-image: url(/images/poster6.png);
     background-position: 0% 10.5%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -166,7 +166,7 @@ html,body{
     width: 100%;
     height: 100%;
     position: absolute;
-    background-image: url(./images/poster11.jpg);
+    background-image: url(/images/poster11.jpg);
     background-position: 0% 50.5%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -175,7 +175,7 @@ html,body{
     width: 100%;
     height: 100%;
     position: absolute;
-    background-image: url(./images/poster13.jpg);
+    background-image: url(/images/poster13.jpg);
     background-position: 0% 15.5%;
     background-repeat: no-repeat;
     background-size: cover;

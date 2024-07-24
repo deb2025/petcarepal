@@ -10,7 +10,7 @@ import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabas
 import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
 import org.springframework.test.annotation.Rollback;
 
-import com.petcarepal.petcarepal.model.UserDtls;
+import com.petcarepal.petcarepal.model.User;
 import com.petcarepal.petcarepal.repository.UserRepository;
 
 @DataJpaTest
@@ -26,7 +26,7 @@ public class PetCarePalApplicationTests {
      
     @Test
     public void testCreateUser() {
-    	UserDtls user = new UserDtls();
+    	User user = new User();
         user.setEmail("ravikumar@gmail.com");
         user.setPassword("ravi2020");
         user.setConfirm("ravi2020");
@@ -34,9 +34,9 @@ public class PetCarePalApplicationTests {
         user.setFullname("Ravi Kumar");
         user.setPetinfo("Kutti-Dog");
          
-        UserDtls savedUser = repo.save(user);
+        User savedUser = repo.save(user);
          
-        UserDtls existUser = entityManager.find(UserDtls.class, savedUser.getId());
+        User existUser = entityManager.find(User.class, savedUser.getId());
          
         assertThat(user.getEmail()).isEqualTo(existUser.getEmail());
          

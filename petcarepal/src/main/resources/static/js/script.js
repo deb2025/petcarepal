@@ -51,7 +51,7 @@ let firstpara=document.querySelector(".pfpara");
 let secondpara=document.querySelector(".pspara");
 let thirdpara=document.querySelector(".ptpara");
 
-let s1="PetCare is now open here in Kolkata!";
+let s1="PetCarePal is now open here in Kolkata!";
 let s2="Any issues with your beloved ones and we are here to solve all of your problems."
 let s3="Give your dogs the best treatment that they deserve!"
 

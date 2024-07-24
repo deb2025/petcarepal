@@ -53,6 +53,10 @@ html,body{
     font-weight: 400;
     color: #ffffff;
 }
+.nav-right{
+	color: white;
+    font-size: 10px;
+}
 
             /* Nav-left section ends */
 
@@ -600,7 +604,7 @@ html,body{
     height: 100%;
     padding-top: 6vw;
     /* background-color: chartreuse; */
-    background-image: url(images/abt-image.jpg);
+    background-image: url(/images/abt-image.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -657,7 +661,7 @@ html,body{
     overflow: hidden;
     width: 22vw;
     height: 60vh;
-    background-image: url(images/diseases-recognition.jpeg.jpg);
+    background-image: url(/images/diseases-recognition.jpeg.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 15px;
@@ -702,7 +706,7 @@ html,body{
     width: 22vw;
     height: 60vh;
     border-radius: 15px;
-    background-image: url(images/cache-locator.jpg);
+    background-image: url(/images/cache-locator.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -742,7 +746,7 @@ html,body{
     width: 22vw;
     height: 60vh;
     border-radius: 15px;
-    background-image: url(images/pet-foods.jpg);
+    background-image: url(/images/pet-foods.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -1020,6 +1024,11 @@ form input:focus ,form textarea:focus{
 }
 .btn-submit:active{
     transform: scale(0.9);
+}
+#msg{
+	color: #61b752;
+	margin-top: 40px;
+	display: block;
 }
 
                             /*Contact Section ends  */

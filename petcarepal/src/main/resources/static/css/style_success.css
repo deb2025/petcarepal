@@ -4,7 +4,7 @@ body{
   justify-content: center;
   align-items: center;
   padding: 10px;
-  background-image: url(./images/success.jpg);
+  background-image: url(/images/success.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom; /* Adjusted position */

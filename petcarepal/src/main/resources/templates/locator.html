@@ -4,70 +4,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PCP-Creche Locator</title>
-    <link rel="stylesheet" href="locator_style.css">
+    <link rel="stylesheet" href="css/locator_style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJ-lbsaVQMLacNeH2G0inFYmJk03TRshA&libraries=places&callback=initMap" async defer></script>
+    <style>
+        /* Ensure the map container has height */
+        #map {
+            width: 100%;
+            height: 400px;
+        }
+        /* Style the search box */
+        .search-box {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 5;
+            background: #fff;
+            padding: 10px;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+            width: 300px;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-    <div class="main-conatiner">
-       <div class="back-side">
-        <div class="overlay"></div>
-       </div>
-       <div class="top-side">
-        <div class="nav-bar">
-            <div class="nav-bar-inside">
-                <div class="first-section">
-                    <div class="first-sec-img" onclick="window.location.href='/';">
-                        <img src="./images/pcplogo.png" alt="">
-                    </div>
-                    <div class="first-sec-middle">
-                        <a href = 'http://localhost:8082/'>home</a>
-                        <div class="others">
-                            <h4 class="others-heading">others services</h4>
-                            <i class="down-icon fa-solid fa-caret-down"></i>
+    <div class="main-container">
+        <div class="back-side">
+            <div class="overlay"></div>
+        </div>
+        <div class="top-side">
+            <div class="nav-bar">
+                <div class="nav-bar-inside">
+                    <div class="first-section">
+                        <div class="first-sec-img" onclick="window.location.href='/';">
+                            <img src="./images/pcplogo.png" alt="">
+                        </div>
+                        <div class="first-sec-middle">
+                            <a href='http://localhost:8082/'>home</a>
+                            <div class="others">
+                                <h4 class="others-heading">others services</h4>
+                                <i class="down-icon fa-solid fa-caret-down"></i>
+                            </div>
+                        </div>
+                        <div class="first-sec-signup" onclick="window.location.href='/signup';">
+                            <button>sign up</button>
                         </div>
                     </div>
-                    <div class="first-sec-signup" onclick="window.location.href='/signup';">
-                        <button>sign up</button>
+                    <div class="second-section">
+                        <div class="second-section-container">
+                            <a href='http://localhost:8501/'>disease recognition</a>
+                            <a href='http://localhost:8082/medicine'>pet medicine</a>
+                        </div>
                     </div>
                 </div>
-                <div class="second-section">
-                    <div class="second-section-container">
-                        <a href='http://localhost:8501/'>disease recognition</a>
-                        <a href='http://localhost:8082/medicine'>pet medicine</a>
+            </div>
+            <div class="creche-body">
+                <div class="left-section">
+                    <div class="left-section-inner">
+                        <div class="heading">
+                            <h1>SEE A VETERINARIAN</h1>
+                        </div>
+                        <div class="description">
+                            <p>
+                                PetCarePal introduces a revolutionary creche locator service tailored to the needs of pet owners everywhere. 
+                                With our innovative platform, finding the perfect daycare or pet creche for your beloved furry companion has never been easier. 
+                                Our comprehensive database offers detailed information on facilities, including services offered, location, and customer reviews, ensuring peace of mind for pet owners. 
+                                Whether you need a safe place for your dog to socialize while you're at work or a trustworthy environment for your cat to play during a weekend getaway, PetCarePal has you covered. 
+                                Say goodbye to endless searching and uncertainty; let PetCarePal guide you to the ideal creche, providing convenience and assurance for both you and your pet.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-section">
+                    <div class="right-section-inner">
+                        <input id="search-input" class="search-box" type="text" placeholder="Search for places...">
+                        <div id="map"></div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="creche-body">
-            <div class="left-section">
-                <div class="left-section-inner">
-                    <div class="heading">
-                        <h1>SEE A VETERINARIAN</h1>
-                    </div>
-                    <div class="description">
-                        <p>
-                            PetCarePal introduces a revolutionary creche locator service tailored to the needs of pet owners everywhere. 
-                            With our innovative platform, finding the perfect daycare or pet creche for your beloved furry companion has never been easier. 
-                            Our comprehensive database offers detailed information on facilities, including services offered, location, and customer reviews, ensuring peace of mind for pet owners. 
-                            Whether you need a safe place for your dog to socialize while you're at work or a trustworthy environment for your cat to play during a weekend getaway, PetCarePal has you covered. 
-                            Say goodbye to endless searching and uncertainty; let PetCarePal guide you to the ideal creche, providing convenience and assurance for both you and your pet.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="right-section">
-                <div class="right-section-inner">
-                    <div class="i-tag">
-                        <iframe src="https://my.atlist.com/map/b2e1dcf4-a426-4be1-b106-494922f0c6de/?share=true" allow="geolocation 'self' https://my.atlist.com" width="100%" height="400px" loading="lazy" frameborder="0" scrolling="no" allowfullscreen id="atlist-embed"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-       </div>
     </div>
-
 
     <script src="https://kit.fontawesome.com/77e08a601e.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="locator_script.js"></script>
+    <script src="js/locator_script.js"></script>
+    <script>
+        function initMap() {
+            const mapOptions = {
+                center: { lat: -34.397, lng: 150.644 },
+                zoom: 8
+            };
+            const map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+            const input = document.getElementById('search-input');
+            const searchBox = new google.maps.places.SearchBox(input);
+
+            // Bias the SearchBox results towards current map's viewport.
+            map.addListener('bounds_changed', () => {
+                searchBox.setBounds(map.getBounds());
+            });
+
+            let markers = [];
+
+            // Listen for the event fired when the user selects a prediction and retrieve
+            // more details for that place.
+            searchBox.addListener('places_changed', () => {
+                const places = searchBox.getPlaces();
+
+                if (places.length === 0) {
+                    return;
+                }
+
+                // Clear out the old markers.
+                markers.forEach((marker) => marker.setMap(null));
+                markers = [];
+
+                // For each place, get the icon, name, and location.
+                const bounds = new google.maps.LatLngBounds();
+                places.forEach((place) => {
+                    if (!place.geometry || !place.geometry.location) {
+                        console.log("Returned place contains no geometry");
+                        return;
+                    }
+                    const icon = {
+                        url: place.icon,
+                        size: new google.maps.Size(71, 71),
+                        origin: new google.maps.Point(0, 0),
+                        anchor: new google.maps.Point(17, 34),
+                        scaledSize: new google.maps.Size(25, 25)
+                    };
+
+                    // Create a marker for each place.
+                    markers.push(new google.maps.Marker({
+                        map,
+                        icon,
+                        title: place.name,
+                        position: place.geometry.location
+                    }));
+
+                    if (place.geometry.viewport) {
+                        // Only geocodes have viewport.
+                        bounds.union(place.geometry.viewport);
+                    } else {
+                        bounds.extend(place.geometry.location);
+                    }
+                });
+                map.fitBounds(bounds);
+            });
+        }
+    </script>
 </body>
 </html>

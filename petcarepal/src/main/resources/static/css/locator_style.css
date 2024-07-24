@@ -22,7 +22,7 @@ html,body{
     position: relative;
     width: 100%;
     height: 100vh;
-    background-image: url(./images/creche-loco.jpg);
+    background-image: url(/images/creche-loco.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0px -15px;

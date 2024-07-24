@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PCP</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <div class="main" id="main">
@@ -23,7 +23,7 @@
                 <a class="threelink" href="#services">services</a>
             </div>
             <div class="nav-right">
-                <button class="sign-up" id="sign-up" onclick="window.location.href='/login';">sign-in</button>
+                <h1>Hi,[[${user.getFullname()}]]</h1>
             </div>
         </div>
         <div class="hero" id="hero">
@@ -56,7 +56,7 @@
                     </div>
                     <div class="categories">
                         <div class="category-one">
-                            <a href='https://dog-skin-disease-recognition-dsdr.onrender.com/' target="_blank">Disease Recognition</a>
+                            <a href='http://localhost:8501/' target="_blank">Disease Recognition</a>
                         </div>
                         <div class="category-two">
                             <a href= "creche_locator" target="_blank">Nearby Pet Care Centers</a>
@@ -70,26 +70,26 @@
             <div class="right-section">
                 <div class="right-section-one">
                     <div class="image-divone">
-                        <img src="/images/hero1.jpg" alt="">
+                        <img src="images/hero1.jpg" alt="">
                     </div>
                     <div class="image-divfour">
-                        <img src="/images/hero4.jpg" alt="">
+                        <img src="images/hero4.jpg" alt="">
                     </div>
                 </div>
                 <div class="right-section-two">
                     <div class="image-divsecond">
-                        <img src="/images/hero2.jpg" alt="">
+                        <img src="images/hero2.jpg" alt="">
                     </div>
                     <div class="image-divfifth">
-                        <img src="/images/hero5.jpg" alt="">
+                        <img src="images/hero5.jpg" alt="">
                     </div>
                 </div>
                 <div class="right-section-three">
                     <div class="image-divthird">
-                        <img src="/images/hero3.jpg" alt="">
+                        <img src="images/hero3.jpg" alt="">
                     </div>
                     <div class="image-divsixth">
-                        <img src="/images/hero6.jpg" alt="">
+                        <img src="images/hero6.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -152,7 +152,7 @@
                             <p>  Empowering dog owners with peace of mind through disease recognition services. </p>
                         </div>
                         <div class="layer-symbol">
-                            <a href='https://dog-skin-disease-recognition-dsdr.onrender.com/'><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href='http://localhost:8501/'><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
                     </div>
                 </div>
@@ -197,11 +197,11 @@
                 <div class="email-number-social">
                     <div class="email">
                         <i class="fa-solid fa-paper-plane"></i>
-                        <p>petcarepalofficial@gmail.com</p>
+                        <p>petcareofficial@gmail.com</p>
                     </div>
                     <div class="number">
                         <i class="fa-solid fa-phone"></i>
-                        <p>9330697068</p>
+                        <p>00012348894</p>
                     </div>
                     <div class="social">
                         <div class="facebook">
@@ -216,17 +216,16 @@
                     </div>
                 </div>
                 <button class="brochure-button">
-                    <a href="images/PetCarePal_Brochure.pdf" download>Download Brochure</a>
+                    <a href="#">Download Brochure</a>
                 </button>
             </div>
             <div class="contact-right-section">
-                <form action="#" name = "submit-to-google-sheet">
+                <form action="#">
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="Email" id="email" placeholder="Your Email">
                     <textarea name="Message" id="message" placeholder="Your message"></textarea>
                     <button type="submit" class="btn-submit">Submit</button>
                 </form>
-                <span id="msg"></span>
             </div>
         </div>
         <footer>
@@ -235,24 +234,6 @@
     </div>
     <script src="https://kit.fontawesome.com/77e08a601e.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="/js/script.js"></script>
-    <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbw7aldsRgo5RI_xEk_TL2OFtAOjrkIpf4GpAzVrJ8BRJkM8d2aglmkZ_P-erV4lnd7_AA/exec'
-  const form = document.forms['submit-to-google-sheet']
-  const msg = document.getElementById("msg")
-
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-			msg.innerHTML = "We received your message. Our executive will get back to you. Thank you for choosing PetCarePal...."
-			setTimeout(function() {
-				msg.innerHTML = ""
-				},5000)
-			form.reset()
-})
-      .catch(error => console.error('Error!', error.message))
-  })
-</script>
+    <script src="js/script.js"></script>
 </body>
 </html>

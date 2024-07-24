@@ -1,14 +1,16 @@
 package com.petcarepal.petcarepal.repository;
 
+
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Repository;
 
-import com.petcarepal.petcarepal.model.UserDtls;
+import com.petcarepal.petcarepal.model.User;
 
 
 
-public interface UserRepository extends JpaRepository<UserDtls,Long> {
-	@Query("SELECT u FROM UserDtls u WHERE u.email = ?1")
-    public UserDtls findByEmail(String email);
-	
+
+@Repository
+public interface UserRepository extends JpaRepository<User,Long> {
+    
+	User findByEmail(String email);
 }
