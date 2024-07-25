@@ -29,46 +29,6 @@ USE CASE DIAGRAM
                      /   \                   /   \
                 Dog Owner             Veterinarian
 
-
-ARCHITECTURE DIAGRAM
---------------------
-
-                  +---------------------------------------------+
-                  |                   User Interface (UI)       |
-                  |---------------------------------------------|
-                  | + Mobile App                                |
-                  | + Web Portal                                |
-                  +---------------------------------------------+
-                                 |                     |
-                                 |                     |
-             +-------------------+---------------------+------------------+
-             |                        |                      |             |
- +-----------------------+  +-----------------+  +--------------------+    |
- | Disease Recognition   |  |  Database       |  |  APIs              |    |
- | Engine                |  |-----------------|  |--------------------|    |
- |-----------------------|  | + User Data     |  | + Disease Detection|    |
- | + AI Algorithms       |  | + Disease Data  |  | + Diagnostics      |    |
- | + ML Models           |  | + Care Recomm.  |  | + Recommendations  |    |
- +-----------------------+  | + Creche Loc.   |  | + Creche Locator   |    |
-                            | + Medicine Inv. |  | + Medicine Shop.   |    |
-                            +-----------------+  +--------------------+    |
-                                 |                     |                  |
-                                 |                     |                  |
-             +-------------------+---------------------+------------------+
-                                 |                     |
-          +----------------------+                     +-------------------+
-          |                                                            |
- +-----------------------+                                 +---------------------+
- |   External Services   |                                 |  External Services  |
- |-----------------------|                                 |---------------------|
- | + Creche Locator      |                                 | + Medicine Suppliers|
- | + Third-Party Service |                                 | + Third-Party Service|
- +-----------------------+                                 +---------------------+
-
-
-
-
-
 How to Use
 Disease Detection:
 
