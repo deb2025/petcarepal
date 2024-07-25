@@ -67,6 +67,8 @@ ARCHITECTURE DIAGRAM
 
 
 
+
+
 How to Use
 Disease Detection:
 
